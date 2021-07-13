@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
+.body,
+* {
+    padding: 0px;
+    margin: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.contali {
+    width: 100%;
+    margin: 0px auto;
+    overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.display-flex {
+    display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bold-light {
+    color: #FFFFFF;
+    font-family: "Mulish", sans-serif;
+    font-weight: 600;
 }
 
-.App-link {
-  color: #61dafb;
+.href-forgotpss {
+    opacity: 70%;
+    text-decoration: none;
+    float: right;
+    font-size: 13px;
+    margin-top: 27px;
+    margin-right: 15px;
+    color: #FFFFFF;
+    opacity: 40%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home-left-con {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.home-right-con {
+    height: 100vh;
+    background-color: #161912;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-home-right {
+    margin-left: 9vh;
+    margin-right: 9vh;
+    width: 500px;
+    object-fit: cover;
+}
+
+.form-login {
+    margin-top: 46px;
+}
+
+.label-Inputs {
+    margin-bottom: 2px;
+    margin-left: 11px;
+}
+
+.mt-24 {
+    margin-top: 24px;
+}
+
+.login-input {
+    width: 100%;
+    height: 60px;
+    background-color: #1E2126;
+    border: none;
+    border-radius: 6px;
+    padding: 16px 18px;
+    color: #FFFFFF;
+    opacity: 50%;
+}
+
+.register-input {
+    height: 60px;
+    background-color: #1E2126;
+    border: none;
+    border-radius: 6px;
+    padding: 16px 18px;
+    color: #FFFFFF;
+    opacity: 50%;
+    width: 100%;
+}
+
+.inputValidation-message {
+    color: #ffcc00;
+    margin-left: 11px;
+    font-size: 13px;
+}
+
+.btn-login {
+    margin-top: 36px;
+    font-size: 21px;
+    height: 60px;
+    font-weight: 600;
+}
+
+.p-after-bttn {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.textafterlogin {
+    color: #FFFFFF;
+    opacity: 50%;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.href {
+    text-decoration: none;
+}
+
+.href:hover {
+    color: #0d6efd;
+}
+
+.inputs-space {
+    margin-left: 30px;
+}
+
+
+/********************* RESPONSIVE DESIGN ********************************/
+
+@media only screen and (max-width: 1024px) {
+    .home-left-con {
+        display: none;
+    }
+    .home-right-con {
+        width: 100%;
+    }
+    .content-home-right {
+        margin: 0px 20px;
+    }
 }
