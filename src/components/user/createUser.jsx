@@ -31,7 +31,7 @@ function CreateUser() {
                 try {
 
                     const response = await axios.post(process.env.REACT_APP_CREATE_USER, newUser);
-                    if (response.status == 201) {
+                    if (response.status === 201) {
 
                         clearInputs();
 
@@ -46,7 +46,9 @@ function CreateUser() {
                     } else {
 
                         setregError(response.data.message);
-
+                        setTimeout(() => {
+                            setregError("");
+                        }, 5000);
                     }
 
 
