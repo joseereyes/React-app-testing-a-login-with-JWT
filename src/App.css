@@ -127,6 +127,151 @@
 }
 
 
+/***********************ASIDE HOME **************************************/
+
+.home-container {
+    background-color: #1E2126;
+    height: 100vh;
+    height: ;
+    width: 100vw;
+}
+
+.top-line-home {
+    height: 1px;
+    width: 100%;
+    background-color: white;
+    opacity: 50%;
+    margin-top: 113px;
+    position: absolute;
+    z-index: 1;
+}
+
+.aside-container {
+    width: 55px;
+    height: 100%;
+    background-color: #FFFFFF;
+    opacity: 17%;
+    border-radius: 0 100px 0 0;
+    position: absolute;
+}
+
+.top-aside-container {
+    width: 55px;
+    height: 112px;
+    background-color: #4370FA;
+    border-radius: 0px 100px 0px 0px;
+}
+
+.navbar-top-container {
+    height: 112px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ul-navbar {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.li-navbar {
+    padding: 0vw 3vw;
+}
+
+.href-li {
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.href-li:hover {
+    color: #4370FA;
+    opacity: 50%;
+}
+
+.ul-li {
+    list-style: none;
+}
+
+.articles-container {
+    max-width: 1300px;
+    margin-top: 157px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #1E2126;
+}
+
+.article {
+    max-width: 208px;
+    min-width: 208px;
+    max-height: 292px;
+    margin-top: 30px;
+    margin: 25px 45px 25px 45px;
+}
+
+.article:hover {
+    margin-top: -10px;
+    transition: 1s;
+}
+
+.img-elipse {
+    width: 208px;
+    height: 49px;
+    background-color: #FFFFFF;
+    opacity: 17%;
+    border-radius: 100%;
+    position: absolute;
+    top: 121px;
+    display: none;
+}
+
+.art-title {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.price-buy-container {
+    margin-top: 15px;
+}
+
+.price-article {
+    color: #D4AF37;
+    font-size: 17px;
+}
+
+.buy-button {
+    background-image: linear-gradient(to right, #16A085 0%, #F4D03F 51%, #16A085 100%)
+}
+
+.buy-button {
+    width: 55px;
+    height: 22px;
+    border-radius: 17px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFFFFF;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border: 0px solid;
+    margin-left: 30px;
+}
+
+.buy-button:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+
 /********************* RESPONSIVE DESIGN ********************************/
 
 @media only screen and (max-width: 1024px) {
