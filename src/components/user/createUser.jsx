@@ -12,8 +12,8 @@ function CreateUser() {
     const [passwordTwo, setPasswordTwo] = useState("");
     const [regError, setregError] = useState("");
     const [registered, setRegistered] = useState("");
-    useEffect(() => {
 
+    useEffect(() => {
 
 
     }, [regError]);
@@ -31,11 +31,14 @@ function CreateUser() {
                 try {
 
                     const response = await axios.post(process.env.REACT_APP_CREATE_USER, newUser);
+
+                    console.log(response);
+
                     if (response.status === 201) {
 
                         clearInputs();
 
-                        setRegistered(response.data.message);
+                        setRegistered(response.data);
 
                         setTimeout(() => {
 
@@ -45,7 +48,7 @@ function CreateUser() {
 
                     } else {
 
-                        setregError(response.data.message);
+                        setregError(response.data);
                         setTimeout(() => {
                             setregError("");
                         }, 5000);
@@ -119,6 +122,11 @@ function CreateUser() {
         for (var i = 0; i < inputs.length; i++) {
             inputs[i].value = "";
         }
+
+        setName("");
+        setEmail("");
+        setpasswordOne("");
+        setPasswordTwo("");
 
     }
 
