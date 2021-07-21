@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useHistory,Redirect } from "react-router-dom";
+import { Link, useHistory, Redirect } from "react-router-dom";
 import axios from "axios";
 import localStorage from "../../auth/localStorage";
 
@@ -14,7 +14,7 @@ function Login() {
     const [logError, setlogError] = useState("");
 
 
-    if(localStorage.getToken("token")){
+    if (localStorage.getToken("token")) {
         window.location.href = "/";
     }
 
@@ -36,16 +36,16 @@ function Login() {
 
             } catch (error) {
 
-                setlogError(error.response.data);
-                setTimeout(() => {
-                    setlogError("");
-                }, 5000);
+                if (error.response) {
 
+                    setlogError(error.response.data);
+                    setTimeout(() => {
+                        setlogError("");
+                    }, 5000);
+
+                }
             }
-
-
         }
-
     }
 
     const validateInputs = () => {

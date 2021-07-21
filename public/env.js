@@ -1,8 +1,7 @@
 window.env = {
   "ALLUSERSPROFILE": "C:\\ProgramData",
   "APPDATA": "C:\\Users\\Ryu\\AppData\\Roaming",
-  "APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL": "true",
-  "CHROME_CRASHPAD_PIPE_NAME": "\\\\.\\pipe\\crashpad_5528_SBDHRHTEFCXOPTAE",
+  "CHROME_CRASHPAD_PIPE_NAME": "\\\\.\\pipe\\crashpad_12644_OJTGLASPDGPTLVBU",
   "COLORTERM": "truecolor",
   "CommonProgramFiles": "C:\\Program Files (x86)\\Common Files",
   "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
@@ -174,7 +173,7 @@ window.env = {
   "npm_package_description": "|  <img src=\"https://i.gyazo.com/c5a308580e0e0cd461e719ac072de2fb.jpg\" />  |  |\r |---|---|",
   "npm_package_eslintConfig_extends_0": "react-app",
   "npm_package_eslintConfig_extends_1": "react-app/jest",
-  "npm_package_gitHead": "3b6ac1b9a42467c19552ae1f7fac0403ad77671e",
+  "npm_package_gitHead": "bad61f33d948d72247aa1e6f9682cddd296925f7",
   "npm_package_name": "login-with-express-jwt",
   "npm_package_private": "true",
   "npm_package_readmeFilename": "README.md",
